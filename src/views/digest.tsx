@@ -45,7 +45,7 @@ export function DigestPage({ night }: { night: Night }) {
           </tbody>
         </table>
       )}
-      {night.badLines > 0 && <p class="mute">{night.badLines} lines didn't parse</p>}
+      {night.badLines > 0 && <p class="mute">{night.badLines} {night.badLines === 1 ? 'line' : 'lines'} didn't parse</p>}
     </>
   );
 }
